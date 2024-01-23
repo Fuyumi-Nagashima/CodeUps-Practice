@@ -1,0 +1,20 @@
+@use "global" as *;
+.c-section-header{
+    color: #391E88;
+    text-align: center;
+}
+.c-section-header__title{
+    font-size: rem(36);
+    text-transform: uppercase;
+    line-height: calc(37/30);
+    letter-spacing:0.05em;
+    font-family: $english-font-family;
+    font-weight: $bold;
+}
+.c-section-header__subtitle{
+    font-size: rem(13);
+    line-height: calc(16/13);
+    letter-spacing:0.05em;
+    color: #391E88;
+    font-weight:$bold;
+}

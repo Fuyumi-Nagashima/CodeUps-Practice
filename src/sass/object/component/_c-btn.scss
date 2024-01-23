@@ -1,0 +1,40 @@
+@use "global" as *;
+.c-btn{
+    display: inline-block;
+    max-width: rem(220);
+    width: 100%;
+    font-size: rem(14);
+    line-height: 1;
+    letter-spacing:1.4px;
+    text-transform: uppercase;
+    font-weight: $bold;
+    font-family: $english-font-family;
+    color:$white;
+    background: linear-gradient(270deg, #250D65 0%, #7633A4 100%);
+    border-radius: 50px;
+    border-color: $white;
+    padding:rem(18) ;
+    text-align: center;
+    transition: opacity 0.3s;
+}
+.c-btn:hover{
+    opacity: 0.8;
+}
+
+.c-btn-triangle::before{
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+}
+.c-btn-triangle{
+    position: relative;
+}
+.c-btn-triangle::before {
+    background-color: $white;
+    bottom: 0;
+    content: "";
+    height: 10px;
+    margin: auto;
+    position:absolute;
+    right: 21px;
+    top: 0;
+    width: 7px;
+}
