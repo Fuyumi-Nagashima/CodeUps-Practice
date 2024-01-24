@@ -29,12 +29,23 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-  <header>
-  </header>
-  <main>
-  </main>
-  <footer>
-  </footer>
+
+  <!-- mv -->
+  <div class="p-mv l-mv">
+      <div class="p-mv__inner">
+        <picture>
+          <!-- ↓ ブラウザ幅が768px以下でwebp対応ブラウザなら「fvSP.webp」を表示！type="image/webpを記入-->
+          <source srcset="../dist/assets/images/common/mv-sp.webp" media="(max-width:768px)" type="image/webp"   >
+          <!-- ↓ ブラウザ幅が768px以下でwebp非対応ブラウザならば「fvSP.jpg」を表示する-->
+          <source srcset="../dist/assets/images/common/mv-sp.jpg" media="(max-width:768px)" >
+          <!-- ↓ ブラウザ幅が768px以上でwebp対応ブラウザなら「fv.webp」を表示する-->
+          <source srcset="../dist/assets/images/common/mv-pc.webp" type="image/webp">
+          <!-- ↓ ブラウザ幅が768px以上でwebp非対応ブラウザならば「fv.jpg」を表示する-->
+          <img src="../dist/assets/images/common/mv-pc.jpg" alt="" width="1440" height="767" decoding="async" loading="lazy" >
+        </picture>
+        <p class="mv__heading"></p>
+      </div>
+  </div>
 
 <!-- 共通パーツ -->
 <div class="c-section-header">
@@ -43,6 +54,84 @@
 </div>
 
 <a href="#" class="c-btn c-btn-triangle">more</a>
+
+<footer class="l-footer p-footer">
+  <div class="p-footer__inner inner">
+    <div class="p-footer__nav p-footer-nav"> <!--p-footer-navというblockが入るのでp-footer__navも入れる！-->
+      <ul class="p-footer-nav__items">
+        <li class="p-footer-nav__item"><a href="" class="">home</a></li>
+        <li class="p-footer-nav__item"><a href="" class="">news</a></li>
+        <li class="p-footer-nav__item"><a href="" class="">service</a></li>
+        <li class="p-footer-nav__item"><a href="" class="">works</a></li>
+        <li class="p-footer-nav__item"><a href="" class="">company</a></li>
+        <li class="p-footer-nav__item"><a href="" class="">recruit</a></li>
+        <li class="p-footer-nav__item"><a href="" class="">contact</a></li>
+      </ul>
+    </div>
+    <div class="p-footer__copyright">
+      <small>&copy;pon design</small>
+    </div>
+  </div>
+</footer>
+<!-- ここからheader -->
+<div class="l-header p-header" >
+  <div class="p-header__inner">
+    <h1 class="p-header__logo">
+      <a class="p-header__logo-link" href="#">CODEUPS</a>
+    </h1>
+    <nav class="p-header__pc-nav pc-nav u-desktop">
+      <ul class="p-pc-nav__items">
+        <li class="p-pc-nav__item">
+          <a class="" href="">news</a>
+        </li>
+        <li class="p-pc-nav__item">
+          <a class="" href="">news</a>
+        </li>
+        <li class="p-pc-nav__item">
+          <a class="" href="">news</a>
+        </li>
+        <li class="p-pc-nav__item">
+          <a class="" href="">news</a>
+        </li>
+        <li class="p-pc-nav__item">
+          <a class="" href="">news</a>
+        </li>
+        <li class="p-pc-nav__item">
+          <a class="" href="">news</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="c-hamburger u-mobile js-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="p-header__drawer-menu drawer-menu u-mobile js-drawer">
+      <div class="drawer-menu__inner">
+        <ul class="drawer-menu__items">
+          <li class="drawer-menu__item">
+            <a class="drawer-menu__link" href="">news</a>
+          </li>
+          <li class="drawer-menu__item">
+            <a class="drawer-menu__link" href="">service</a>
+          </li>
+          <li class="drawer-menu__item">
+            <a class="drawer-menu__link" href="">works</a>
+          </li>
+          <li class="drawer-menu__item">
+            <a class="drawer-menu__link" href="">company</a>
+          </li>
+          <li class="drawer-menu__item">
+            <a class="drawer-menu__link" href="">recruit</a>
+          </li>
+          <li class="drawer-menu__item">
+            <a class="drawer-menu__link" href="">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div> 
+  </div>
+</div>
 
 
 

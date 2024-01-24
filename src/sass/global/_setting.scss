@@ -32,4 +32,22 @@ $black: #333;
 $white: #fff;
 $bg-black:#120E19;
 
+////////////////////
+// PCとSPの表示非表示の切り替え
+////////////////////
+
+/*画像の縦横比設定*/
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* aタグのスタイルリセット*/
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
 

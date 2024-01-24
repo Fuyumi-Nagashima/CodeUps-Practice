@@ -1,0 +1,25 @@
+@use "global" as *;
+.p-pc-nav__items{/*ここの解答要確認*/
+    display: flex;
+    gap: rem(25);
+    align-items: center;
+    height:inherit;
+}
+.p-pc-nav__item{/*ここの解答要確認*/
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+.p-pc-nav__item a{
+    height: inherit;
+    color: $white;
+    font-family:$english-font-family;
+    text-transform: uppercase;
+    font-size: rem(14);
+    font-weight: $bold;
+    letter-spacing: 0.07em;
+    line-height: calc(25/14);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+}

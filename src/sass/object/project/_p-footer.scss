@@ -1,0 +1,16 @@
+@use "global" as *;
+.p-footer__inner{
+    padding: 0 rem(30);
+    margin:auto;
+}
+.p-footer__copyright{
+    color:#A798B7;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $english-font-family;
+    font-size: rem(10);
+    line-height: 1;//改行可能性ないので1でOK
+    letter-spacing:0.5px;
+    font-weight: $normal;
+    margin-top: rem(35);
+}
