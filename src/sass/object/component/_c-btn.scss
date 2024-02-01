@@ -17,6 +17,11 @@
     text-align: center;
     transition: opacity 0.3s;
 }
+.c-btn-transparent {
+    background:transparent;
+    border: 1px solid #FFF;
+}
+
 .c-btn:hover{
     opacity: 0.8;
 }

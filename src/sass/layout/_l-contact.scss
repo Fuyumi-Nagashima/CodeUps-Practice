@@ -1,0 +1,34 @@
+@use "global" as *;
+.l-contact {
+    margin-top:rem(110);
+    padding:rem(60) rem(0) ;
+    background-color:#F0F0F0;
+}
+.p-contact__body {
+    text-align: center;
+}
+
+.p-contact__text {
+    margin-top: rem(30);
+    font-size: rem(14);
+    line-height: calc(25/14);
+    letter-spacing:0.05em;
+    @include mq('md'){
+        font-size: rem(15);
+        line-height: calc(27/15);
+    
+    }
+}
+
+.p-recruit__btn {
+
+}
+
+.c-btn {
+
+}
+
+.c-btn-triangle {
+
+}
+

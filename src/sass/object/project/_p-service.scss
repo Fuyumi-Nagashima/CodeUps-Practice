@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.p-service__items{
+    //下層ページでは違うかたちなのでp-service__itemにgridをあてる
+    display:grid;
+    row-gap: rem(40);
+    @include mq('md'){
+        grid-template-columns:repeat(auto-fit,minmax(349px,1fr));
+        column-gap: rem(30);
+    }
+}
+.p-service__btn{
+    text-align: center;
+    margin-top: rem(30);
+}

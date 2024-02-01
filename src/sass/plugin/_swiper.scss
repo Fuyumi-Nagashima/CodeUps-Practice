@@ -1,0 +1,12 @@
+@use "global" as *;
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom,-25px);
+    top: var(--swiper-pagination-top,auto);
+    left: 0;
+    width: 100%;
+    text-align: right;
+}
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #391E88;
+}

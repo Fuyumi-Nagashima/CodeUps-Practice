@@ -1,0 +1,38 @@
+@use "global" as *;
+.p-service__items{
+    //使い回す用のp-card-listには余白指定しない！
+    margin-top: rem(30);
+}
+.p-card__image{
+    aspect-ratio:345/216 ;
+    @include mq('md'){
+    aspect-ratio:350/220 ;
+    }
+}
+.p-card__image img{
+    object-fit: cover ;
+    height:100%;
+} 
+.p-card__body{
+    margin-top: rem(15);
+}
+.p-card__title{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:rem(18);
+    font-weight: 600;
+    line-height: calc(21/18);
+    letter-spacing: 0.9px;
+}
+.p-card__text{
+    margin-top: rem(10);
+    font-size: rem(14);
+    font-weight: 300;
+    line-height:calc(25/14) ; 
+    letter-spacing: 0.7px;
+    @include mq('md'){
+    font-size: rem(15);
+    line-height:calc(27/15) ;
+    letter-spacing: 0.75px;     
+    }
+}

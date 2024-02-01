@@ -6,7 +6,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             $(".js-hamburger").toggleClass("is-active");
             $(".js-drawer").fadeToggle();
         });
-    });
+  
     $(".js-drawer a[href]").on("click", function () {
         $(".js-hamburger").trigger("click");
     });
@@ -24,5 +24,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         state = false;
         }
     });
+
+    //topWorksのスライダー
+    var swiper = new Swiper(".topWorks-Swiper", {
+        pagination: {
+          el: ".topWorks-paginations",
+        },
+        loop:true,
+        autoplay: {
+            delay:3000,
+          },
+      });
+});
 
 

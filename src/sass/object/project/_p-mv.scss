@@ -1,4 +1,108 @@
 @use "global" as *;
-.mv{
-    background-image: url(../../images/common/mv-sp.jpeg);
+
+.mv__title-large{
+    color: #FFF;
+    text-shadow: 0px 0px 2.5px rgba(185, 117, 201, 0.91);
+    font-family: Montserrat;
+    font-size: rem(40);
+    /*clam関数で書いてみる*/
+    font-weight:$bold;
+    line-height: calc(44/40);
+    letter-spacing: 1.5px;
+}
+.mv__title-small{
+    color: #FFF;
+    text-shadow: 0px 3px 3px rgba(153, 38, 196, 0.16);
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: rem(16);
+    font-weight: 300;
+    line-height: calc(29/16);
+    letter-spacing: 1.6px;
+    margin-top:rem(20);
+}
+.p-mv__inner{
+    // margin-top: rem(64);
+    background-image: url(../images/common/mv-sp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-right:rem(50);
+    padding-left: rem(30);
+    margin-inline: auto;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.p-mv__inner img{
+    height: 100%;
+    object-fit: cover;
+}
+.mv__title-wrap{
+    padding-right:rem(50);
+    padding-left: rem(30);
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.p-mv__btn{
+    margin-top: rem(30);
+}
+
+/* 線の描写 */
+.p-mv{
+    position:relative;
+}
+.scroll-down{
+    bottom: 0;
+        // left: 50%; 
+        right: 27px;
+        position: absolute;
+        // transform: translateX(-50%);
+    }
+    .scroll-text {
+        position: absolute;
+        bottom: 70px;
+        // left: 50%;
+        writing-mode: vertical-lr;
+        color:$white;
+        font-size:rem(12);
+        font-weight: $bold;
+        font-family:$english-font-family;
+        text-transform: uppercase;
+        letter-spacing: 2.4px;
+        // transform: translateX(-50%);
+    }
+    .scroll-bar-wrap {
+        bottom: 0;
+        height: 60px;
+        right: -10px;
+        /* left: 50%; */
+        overflow: hidden;
+        position: absolute;
+        /* transform: translateX(-50%); */
+        width: 2px;
+    }
+    .scroll-bar {
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-name: animation2;
+        animation-timing-function: ease;
+        background: white;
+        height: 30px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 1px;
+    }
+
+@keyframes animation2 {
+    //高さが同じで上から下へ移動する
+    0% {
+        top: -30px;
+    }
+    100% {
+        top: 100%;
+    }
 }

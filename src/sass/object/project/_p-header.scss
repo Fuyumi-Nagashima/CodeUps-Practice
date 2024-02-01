@@ -1,6 +1,7 @@
 @use "global" as *;
 .p-header{
-    background-color: purple;/*あとで消す*/
+    position: fixed;
+    background-color: transparent;/*あとで消す*/
     height:rem(64) ;
     width: 100%;
     @include mq('md'){

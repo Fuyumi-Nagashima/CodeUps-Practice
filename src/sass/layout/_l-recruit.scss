@@ -1,0 +1,38 @@
+@use "global" as *;
+.l-recruit {
+    margin-top: rem(60);
+    @include mq('md'){
+        margin-top: rem(40);
+    }
+}
+.p-recruit__container {
+
+
+}
+
+.recruit__image {
+    aspect-ratio:345/200 ;
+    @include mq('md'){
+        aspect-ratio:666/347 ;    
+    }
+}
+.p-recruit__image img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.p-recruit__body {
+    margin-top: rem(70);
+    text-align:center;
+}
+.p-recruit__text{
+    margin-top:rem(30);
+    font-size: rem(14);
+    line-height: calc(25/14);
+    letter-spacing:0.05em;
+}
+.p-recruit__btn {
+    margin-top:rem(30);
+}
+
+

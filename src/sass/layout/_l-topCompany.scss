@@ -1,0 +1,67 @@
+@use "global" as *;
+//PC verも作ったらscssファイルを分けること！！
+.l-topCompany{
+    margin-top: rem(60);
+    padding-top: rem(60);   
+    padding-bottom: rem(30);   
+    background-image: url(../images/common/company_bg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    @include mq('md'){
+    margin-top: rem(140);
+    }
+}
+.l-company__inner{
+    //左右のpaddingがimgと重なりあってしまっているのOKか確認(1440pxのときはカンプ通り)
+    @include mq('md'){
+        max-width: rem(1440);
+        background-image: url(../images/common/company-bg-face.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        padding-right: rem(70);
+        padding-left: rem(70);
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.p-company-wrap__lead{
+    text-align: center;
+    font-size:rem(32);
+    font-weight: 600;
+    line-height:calc(48/32); /* 150% */
+    letter-spacing: 1.6px;
+    margin-top: rem(30);
+    @include mq('md'){
+        font-size:rem(40);
+        line-height:1; 
+        letter-spacing:2px;   
+        margin-top: rem(27); 
+    }
+}
+.p-company-wrap__lead span{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 70%, rgb(245,245,52) 70%);
+}
+.p-company-wrap__text{
+    text-align: center;
+    font-size:rem(14);
+    font-weight: 300;
+    line-height: calc(25/14); 
+    letter-spacing: 0.7px;
+    margin-top: rem(40); 
+    @include mq('md'){
+        font-size:rem(15);
+        line-height: calc(27/15); 
+        letter-spacing: 0.75px;
+    }
+}
+.p-company__btn{
+    text-align: center;
+    margin-top: rem(30); 
+}
+
+
+
+
