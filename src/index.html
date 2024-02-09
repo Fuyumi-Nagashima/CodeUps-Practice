@@ -1,315 +1,374 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="robots" content="noindex" />
-  <!-- meta情報 -->
-  <title>CodeUpsライブコーディング第3章</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
-  <!-- ファビコン -->
-  <link rel="”icon”" href="" />
-  <!-- Google フォント -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-  <!-- css -->
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script defer src="./assets/js/script.js"></script>
-</head>
-<body>
-<!-- ここからheader -->
-<header class="l-header p-header" >
-  <div class="p-header__inner">
-    <h1 class="p-header__logo">
-      <a class="p-header__logo-link" href="#">CODEUPS</a>
-    </h1>
-    <nav class="p-header__pc-nav pc-nav u-desktop">
-      <ul class="p-pc-nav__items">
-        <li class="p-pc-nav__item">
-          <a class="" href="">news</a>
-        </li>
-        <li class="p-pc-nav__item">
-          <a class="" href="">news</a>
-        </li>
-        <li class="p-pc-nav__item">
-          <a class="" href="">news</a>
-        </li>
-        <li class="p-pc-nav__item">
-          <a class="" href="">news</a>
-        </li>
-        <li class="p-pc-nav__item">
-          <a class="" href="">news</a>
-        </li>
-        <li class="p-pc-nav__item">
-          <a class="" href="">news</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="c-hamburger u-mobile js-hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="p-header__drawer-menu drawer-menu u-mobile js-drawer">
-      <div class="drawer-menu__inner">
-        <ul class="drawer-menu__items">
-          <li class="drawer-menu__item">
-            <a class="drawer-menu__link" href="">news</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+    <!-- meta情報 -->
+    <title>CodeUpsライブコーディング第3章</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="”icon”" href="" />
+    <!-- Google フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <!-- ここからheader -->
+    <header class="l-header p-header js-header">
+      <div class="p-header__inner">
+        <h1 class="p-header__logo">
+          <a class="p-header__logo-link" href="#">CODEUPS</a>
+        </h1>
+        <nav class="p-header__pc-nav pc-nav u-desktop">
+          <ul class="p-pc-nav__items">
+            <li class="p-pc-nav__item">
+              <a class="" href="">news</a>
+            </li>
+            <li class="p-pc-nav__item">
+              <a class="" href="">news</a>
+            </li>
+            <li class="p-pc-nav__item">
+              <a class="" href="">news</a>
+            </li>
+            <li class="p-pc-nav__item">
+              <a class="" href="">news</a>
+            </li>
+            <li class="p-pc-nav__item">
+              <a class="" href="">news</a>
+            </li>
+            <li class="p-pc-nav__item">
+              <a class="" href="">news</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="c-hamburger u-mobile js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="p-header__drawer-menu drawer-menu u-mobile js-drawer">
+          <div class="drawer-menu__inner">
+            <ul class="drawer-menu__items">
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">news</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">service</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">works</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">company</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">recruit</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- mv -->
+    <section class="l-mv p-mv">
+      <div class="p-mv__inner">
+        <div class="mv__title-wrap">
+          <p class="mv__title-large">
+            WEB DESIGN&nbsp;<br class="u-mobile" />SPECIALIST
+          </p>
+          <p class="mv__title-small">
+            お客様の夢を叶える<br class="u-mobile" />Webサイトを制作
+          </p>
+          <div class="p-mv__btn">
+            <a href="#" class="c-btn c-btn-transparent c-btn-triangle"
+              >contact</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down">
+        <p class="scroll-text">scroll</p>
+        <div class="scroll-bar-wrap">
+          <div class="scroll-bar"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ニュースセクション -->
+    <section class="p-news l-topNews">
+      <div class="l-inner l-news__inner">
+        <div
+          class="c-section-header c-news__section-header c-section-header--left"
+        >
+          <h2 class="c-section-header__title">news</h2>
+          <p class="c-section-title__subtitle">お知らせ</p>
+        </div>
+        <ul class="p-news__items">
+          <li class="p-news__item p-news-content">
+            <div class="p-news-content__info">
+              <time class="p-news-content__date" datetime="2024-01-21"
+                >2024.01.21</time
+              >
+              <p class="p-news-content__category">制作実績</p>
+            </div>
+            <div class="p-news-content__block">
+              <a class="p-news-content__text"
+                >Webデザインニュースサイト「ウェブマガジン」に取材いただきましたWebデザインニュースサイト「ウェブマガジン」に取材いただきましたWebデザインニュースサイト「ウェブマガジン」に取材いただきましたWebデザインニュースサイト「ウェブマガジン」に取材いただきました</a
+              >
+            </div>
           </li>
-          <li class="drawer-menu__item">
-            <a class="drawer-menu__link" href="">service</a>
+          <li class="p-news__item p-news-content">
+            <div class="p-news-content__info">
+              <time class="p-news-content__date" datetime="2024-01-21"
+                >2024.01.21</time
+              >
+              <p class="p-news-content__category">お知らせ</p>
+            </div>
+            <div class="p-news-content__block">
+              <a class="p-news-content__text"
+                >Smoothiesta様のWebサイトを制作いたしました</a
+              >
+            </div>
           </li>
-          <li class="drawer-menu__item">
-            <a class="drawer-menu__link" href="">works</a>
-          </li>
-          <li class="drawer-menu__item">
-            <a class="drawer-menu__link" href="">company</a>
-          </li>
-          <li class="drawer-menu__item">
-            <a class="drawer-menu__link" href="">recruit</a>
-          </li>
-          <li class="drawer-menu__item">
-            <a class="drawer-menu__link" href="">contact</a>
+          <li class="p-news__item p-news-content">
+            <div class="p-news-content__info">
+              <time class="p-news-content__date" datetime="2024-01-21"
+                >2024.01.21</time
+              >
+              <p class="p-news-content__category">採用</p>
+            </div>
+            <div class="p-news-content__block">
+              <a class="p-news-content__text"
+                >Webデザイナーを１名募集中です！</a
+              >
+            </div>
           </li>
         </ul>
       </div>
-    </div> 
-  </div>
-</header>
-  <!-- mv -->
-  <section class="l-mv p-mv">
-    <div class="p-mv__inner">
-        <div class="mv__title-wrap">
-          <p class="mv__title-large">WEB DESIGN<br class="u-mobile">SPECIALIST</p>
-          <p class="mv__title-small">お客様の夢を叶える<br class="u-mobile">Webサイトを制作</p>
-          <div class="p-mv__btn">
-            <a href="#" class="c-btn  c-btn-transparent c-btn-triangle">contact</a>
-          </div>
-      </div>
-    </div>
-    <div class="scroll-down">
-      <p class="scroll-text">scroll</p>
-      <div class="scroll-bar-wrap">
-          <div class="scroll-bar"></div>
-      </div>
-  </div>
-  </section>
-  <!-- ニュースセクション -->
-  <section class="p-news l-topNews">
-    <div class="l-inner l-news__inner">
-      <div class="c-section-header c-news__section-header">
-        <h2 class="c-section-header__title">news</h2>
-        <p class="c-section-title__subtitle">お知らせ</p>
-      </div>
-      <ul class="p-news__items">
-        <li class="p-news__item p-news-content">
-          <div class="p-news-content__info">
-            <time class="p-news-content__date" datetime="2024-01-21">2024.01.21</time>
-            <p class="p-news-content__category">制作実績</p>
-          </div>
-          <div class="p-news-content__block">
-            <a class="p-news-content__text">Webデザインニュースサイト「ウェブマガジン」に取材いただきましたWebデザインニュースサイト「ウェブマガジン」に取材いただきましたWebデザインニュースサイト「ウェブマガジン」に取材いただきましたWebデザインニュースサイト「ウェブマガジン」に取材いただきました</a>
-          </div>
-        </li>      
-        <li class="p-news__item p-news-content">
-          <div class="p-news-content__info">
-            <time class="p-news-content__date" datetime="2024-01-21">2024.01.21</time>
-            <p class="p-news-content__category">お知らせ</p>
-          </div>
-          <div class="p-news-content__block">
-            <a class="p-news-content__text">Smoothiesta様のWebサイトを制作いたしました</a>
-          </div>
-        </li>      
-        <li class="p-news__item p-news-content">
-          <div class="p-news-content__info">
-            <time class="p-news-content__date" datetime="2024-01-21">2024.01.21</time>
-            <p class="p-news-content__category">採用</p>
-          </div>
-          <div class="p-news-content__block">
-            <a class="p-news-content__text">Webデザイナーを１名募集中です！</a>
-          </div>
-        </li>      
-      </ul>    
-    </div>
-  </section>
+    </section>
 
-  <!-- Topのserviceセクション -->
-  <section class="p-service l-topService">
-    <div class="l-inner l-service__inner">
-      <div class="c-section-header c-service__section-header">
-        <h2 class="c-section-header__title">service</h2>
-        <p class="c-section-title__subtitle">事業内容</p>
-      </div>
-      <div class="p-service__items p-cards"><!--p-cardsはなくてもOK理由は下層ページで3/3のデザインが違うから-->
-        <div class="p-service__item p-card">
-          <figure class="p-service__image p-card__image ">
-            <picture>
-            <source srcset="./assets/images/common/service01.webp" type="images/webp">
-            <img src="./assets/images/common/service01.jpg" alt="PC画像">
-            </picture>
-          </figure>
-          <div class="p-service__body p-card__body ">
-            <h3 class="p-service__title p-card__title">webサイト制作</h3>
-            <p class="p-service__text p-card__text">新規サイトはもちろん、サイトリニューアルやランディングページ制作も行っております。</p>
-          </div> 
+    <!-- Topのserviceセクション -->
+    <section class="p-service l-topService">
+      <div class="l-inner l-service__inner">
+        <div class="c-section-header c-service__section-header">
+          <h2 class="c-section-header__title">service</h2>
+          <p class="c-section-title__subtitle">事業内容</p>
         </div>
-        <div class="p-service__item p-card">
-          <figure class="p-service__image p-card__image ">
-            <picture>
-            <source srcset="./assets/images/common/service02.webp" type="images/webp">
-            <img src="./assets/images/common/service02.jpg" alt="PC画像">
-            </picture>
-          </figure>
-          <div class="p-service__body p-card__body ">
-            <h3 class="p-service__title p-card__title">webサイト制作</h3>
-            <p class="p-service__text p-card__text">サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案が可能です。</p>
-          </div> 
-        </div>
-        <div class="p-service__item p-card">
-          <figure class="p-service__image p-card__image ">
-            <picture>
-            <source srcset="./assets/images/common/service03.webp" type="images/webp">
-            <img src="./assets/images/common/service03.jpg" alt="PC画像">
-            </picture>
-          </figure>
-          <div class="p-service__body p-card__body ">
-            <h3 class="p-service__title p-card__title">アプリ開発</h3>
-            <p class="p-service__text p-card__text">スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。</p>
-          </div> 
-        </div>
-      </div>
-      <div class="p-service__btn">
-        <a href="#" class="c-btn c-btn-triangle">more</a>
-      </div>
-    </div>
-  </section>
-  <!-- Topのworksセクション -->
-  <section class="p-topWorks l-topWorks">
-    <div class="l-inner l-topWorks__inner">
-      <div class="p-topWorks__content">
-        <div class="p-topWorks__image">
-             <!-- Swiper -->
-   <div class="swiper topWorks-Swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide topWorks-slide ">
-        <img src="./assets/images/common/works-img01.jpg" alt="">
-      </div>
-      <div class="swiper-slide topWorks-slide">
-        <img src="./assets/images/common/works-img02.jpg" alt="">
-      </div>
-      <div class="swiper-slide topWorks-slide">
-        <img src="./assets/images/common/works-img03.jpg" alt="">
-      </div>
-      <div class="swiper-slide topWorks-slide">
-        <img src="./assets/images/common/mv-sp.jpg" alt="">
-      </div>
-    </div>
-  </div>
-  <div class="swiper-pagination topWorks-paginations"></div>
-        </div>
-        <div class="p-topWorks__text-body">
-          <div class="c-section-header c-topWorks__section-header">
-            <h2 class="c-section-header__title">works</h2>
-            <p class="c-section-title__subtitle">制作実績</p>
+        <div class="p-service__items p-cards">
+          <!--p-cardsはなくてもOK理由は下層ページで3/3のデザインが違うから-->
+          <div class="p-service__item p-card">
+            <figure class="p-service__image p-card__image">
+              <picture>
+                <source
+                  srcset="./assets/images/common/service01.webp"
+                  type="images/webp"
+                />
+                <img src="./assets/images/common/service01.jpg" alt="PC画像" />
+              </picture>
+            </figure>
+            <div class="p-service__body p-card__body">
+              <h3 class="p-service__title p-card__title">webサイト制作</h3>
+              <p class="p-service__text p-card__text">
+                新規サイトはもちろん、サイトリニューアルやランディングページ制作も行っております。
+              </p>
+            </div>
           </div>
-          <div class="p-topWorks__text-block">
-            様々なジャンルのWebサイト制作が可能です。<br>ご購入やお申込み数の増加などを実現します！
+          <div class="p-service__item p-card">
+            <figure class="p-service__image p-card__image">
+              <picture>
+                <source
+                  srcset="./assets/images/common/service02.webp"
+                  type="images/webp"
+                />
+                <img src="./assets/images/common/service02.jpg" alt="PC画像" />
+              </picture>
+            </figure>
+            <div class="p-service__body p-card__body">
+              <h3 class="p-service__title p-card__title">webサイト制作</h3>
+              <p class="p-service__text p-card__text">
+                サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案が可能です。
+              </p>
+            </div>
           </div>
-          <div class="p-topWorks__btn">
+          <div class="p-service__item p-card">
+            <figure class="p-service__image p-card__image">
+              <picture>
+                <source
+                  srcset="./assets/images/common/service03.webp"
+                  type="images/webp"
+                />
+                <img src="./assets/images/common/service03.jpg" alt="PC画像" />
+              </picture>
+            </figure>
+            <div class="p-service__body p-card__body">
+              <h3 class="p-service__title p-card__title">アプリ開発</h3>
+              <p class="p-service__text p-card__text">
+                スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="p-service__btn">
+          <a href="#" class="c-btn c-btn-triangle">more</a>
+        </div>
+      </div>
+    </section>
+    <!-- Topのworksセクション -->
+    <section class="p-topWorks l-topWorks">
+      <div class="l-inner l-topWorks__inner">
+        <div class="p-topWorks__content">
+          <div class="p-topWorks__image">
+            <!-- Swiper -->
+            <div class="swiper topWorks-Swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide topWorks-slide">
+                  <img src="./assets/images/common/works-img01.jpg" alt="" />
+                </div>
+                <div class="swiper-slide topWorks-slide">
+                  <img src="./assets/images/common/works-img02.jpg" alt="" />
+                </div>
+                <div class="swiper-slide topWorks-slide">
+                  <img src="./assets/images/common/works-img03.jpg" alt="" />
+                </div>
+                <div class="swiper-slide topWorks-slide">
+                  <img src="./assets/images/common/mv-sp.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination topWorks-paginations"></div>
+          </div>
+          <div class="p-topWorks__text-body">
+            <div class="c-section-header c-topWorks__section-header">
+              <h2 class="c-section-header__title">works</h2>
+              <p class="c-section-title__subtitle">制作実績</p>
+            </div>
+            <div class="p-topWorks__text-block">
+              様々なジャンルのWebサイト制作が可能です。<br />ご購入やお申込み数の増加などを実現します！
+            </div>
+            <div class="p-topWorks__btn">
+              <a href="#" class="c-btn c-btn-triangle">more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Topのcompanyセクション(クラス名PCVer作成のときに要確認！) -->
+    <section class="p-topCompany l-topCompany">
+      <div class="l-inner l-company__inner">
+        <div class="c-section-header c-company__section-header">
+          <h2 class="c-section-header__title">company</h2>
+          <p class="c-section-title__subtitle">私たちについて</p>
+        </div>
+        <div class="p-company__container p-company-wrap">
+          <h3 class="p-company-wrap__lead">
+            <span
+              >サイトのゴール =<br class="u-mobile" />
+              夢を叶えること</span
+            >
+          </h3>
+          <p class="p-company-wrap__text">
+            お客様の夢を叶えること。<br />それがWebサイトのゴールであり、<br
+              class="u-mobile"
+            />私たちが目指すことです。<br />だからこそちゃんと成果を出すサイトを<br
+              class="u-mobile"
+            />全力でお作りします。<br />お客様の笑顔を見たい。<br />夢を実現する手助けをさせてください。
+          </p>
+          <div class="p-company__btn">
             <a href="#" class="c-btn c-btn-triangle">more</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Topのcompanyセクション(クラス名PCVer作成のときに要確認！) -->
-  <section class="p-topCompany l-topCompany">
-    <div class="l-inner l-company__inner">
-      <div class="c-section-header c-company__section-header">
-        <h2 class="c-section-header__title">company</h2>
-        <p class="c-section-title__subtitle">私たちについて</p>
-      </div>
-      <div class="p-company__container p-company-wrap">
-        <h3 class="p-company-wrap__lead"><span>サイトのゴール =<br class="u-mobile"> 夢を叶えること</span></h3>
-        <p class="p-company-wrap__text">お客様の夢を叶えること。<br>それがWebサイトのゴールであり、<br class="u-mobile">私たちが目指すことです。<br>だからこそちゃんと成果を出すサイトを<br class="u-mobile">全力でお作りします。<br>お客様の笑顔を見たい。<br>夢を実現する手助けをさせてください。</p>
-        <div class="p-company__btn">
-          <a href="#" class="c-btn c-btn-triangle">more</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- 採用情報(Recruit)セクション-->
-  <section class="p-recruit l-recruit">
-    <div class="l-inner l-recruit__inner">
-      <div class="p-recruit__container ">
-        <figure class="p-recruit__image">
-          <picture>
-            <source srcset="画像URL" type="images/webp">
-            <img src="./assets/images/common/recruit.jpg" alt="recruitの画像">
-          </picture>
-        </figure>
-        <div class="p-recruit__body">
-          <div class="c-section-header c-recruit__section-header">
-            <h2 class="c-section-header__title">recruit</h2>
-            <p class="c-section-title__subtitle">採用情報</p>
+    </section>
+    <!-- 採用情報(Recruit)セクション-->
+    <section class="p-recruit l-recruit">
+      <div class="l-inner l-recruit__inner">
+        <div class="p-recruit__container">
+          <figure class="p-recruit__image">
+            <picture>
+              <source srcset="画像URL" type="images/webp" />
+              <img
+                src="./assets/images/common/recruit.jpg"
+                alt="recruitの画像"
+              />
+            </picture>
+          </figure>
+          <div class="p-recruit__body">
+            <div class="c-section-header c-recruit__section-header">
+              <h2 class="c-section-header__title">recruit</h2>
+              <p class="c-section-title__subtitle">採用情報</p>
+            </div>
+            <p class="p-recruit__text">私たちと一緒に働きませんか？</p>
+            <div class="p-recruit__btn">
+              <a href="#" class="c-btn c-btn-triangle">more</a>
+            </div>
           </div>
-          <p class="p-recruit__text">私たちと一緒に働きませんか？</p>
-        <div class="p-recruit__btn">
-          <a href="#" class="c-btn c-btn-triangle">more</a>
-        </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- お問い合わせ(Contact)セクション-->
-  <section class="p-contact l-contact">
-    <div class="l-inner l-contact__inner">
-      <div class="c-section-header c-contact__section-header">
-        <h2 class="c-section-header__title">contact</h2>
-        <p class="c-section-title__subtitle">お問い合わせ</p>
-      </div>
-      <div class="p-contact__body">
-        <p class="p-contact__text">Webサイトの制作のご依頼やお見積りなど、<br class="u-mobile">お気軽にご相談ください。</p>
-        <div class="p-recruit__btn">
-          <a href="#" class="c-btn c-btn-triangle">more</a>
+    </section>
+    <!-- お問い合わせ(Contact)セクション-->
+    <section class="p-contact l-contact">
+      <div class="l-inner l-contact__inner">
+        <div class="c-section-header c-contact__section-header">
+          <h2 class="c-section-header__title">contact</h2>
+          <p class="c-section-title__subtitle">お問い合わせ</p>
+        </div>
+        <div class="p-contact__body">
+          <p class="p-contact__text">
+            Webサイトの制作のご依頼やお見積りなど、<br
+              class="u-mobile"
+            />お気軽にご相談ください。
+          </p>
+          <div class="p-recruit__btn">
+            <a href="#" class="c-btn c-btn-triangle">more</a>
+          </div>
         </div>
       </div>
+    </section>
+    <!-- footer-->
+    <footer class="l-footer p-footer">
+      <div class="p-footer__inner inner">
+        <div class="p-footer__nav p-footer-nav">
+          <!--p-footer-navというblockが入るのでp-footer__navも入れる！-->
+          <ul class="p-footer-nav__items">
+            <li class="p-footer-nav__item"><a href="" class="">home</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">news</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">service</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">works</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">company</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">recruit</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">contact</a></li>
+          </ul>
+        </div>
+        <div class="p-footer__copyright">
+          <small>&copy;pon design</small>
+        </div>
       </div>
-  </section>
-  <!-- footer-->
-<footer class="l-footer p-footer">
-  <div class="p-footer__inner inner">
-    <div class="p-footer__nav p-footer-nav"> <!--p-footer-navというblockが入るのでp-footer__navも入れる！-->
-      <ul class="p-footer-nav__items">
-        <li class="p-footer-nav__item"><a href="" class="">home</a></li>
-        <li class="p-footer-nav__item"><a href="" class="">news</a></li>
-        <li class="p-footer-nav__item"><a href="" class="">service</a></li>
-        <li class="p-footer-nav__item"><a href="" class="">works</a></li>
-        <li class="p-footer-nav__item"><a href="" class="">company</a></li>
-        <li class="p-footer-nav__item"><a href="" class="">recruit</a></li>
-        <li class="p-footer-nav__item"><a href="" class="">contact</a></li>
-      </ul>
-    </div>
-    <div class="p-footer__copyright">
-      <small>&copy;pon design</small>
-    </div>
-  </div>
-</footer>
-</body>
+    </footer>
+  </body>
 </html>

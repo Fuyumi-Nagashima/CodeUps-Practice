@@ -1,8 +1,16 @@
 @use "global" as *;
 .l-contact {
-    margin-top:rem(110);
+    margin-top:rem(110); 
+}
+.l-contact--mt0{
+    margin-top:0;
+}
+.p-contact{
     padding:rem(60) rem(0) ;
     background-color:#F0F0F0;
+    @include mq('md'){
+        padding:rem(70) rem(0) ;
+    }
 }
 .p-contact__body {
     text-align: center;
@@ -20,15 +28,5 @@
     }
 }
 
-.p-recruit__btn {
 
-}
-
-.c-btn {
-
-}
-
-.c-btn-triangle {
-
-}
 

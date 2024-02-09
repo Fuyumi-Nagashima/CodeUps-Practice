@@ -1,0 +1,39 @@
+@use "global" as *;
+.c-breadcrumb{
+    padding: rem(5) 0;
+    background-color:#BCD6D6 ;
+}
+.c-breadcrumb__lists{
+    display: flex;
+    align-items: center;
+}
+.c-breadcrumb__list-link{
+    font-size: rem(11);
+    line-height: calc(20/11);
+    letter-spacing:0.05em;
+    font-family: $english-font-family;
+    text-transform: uppercase;
+}
+.c-breadcrumb__list {
+    display: flex;
+    align-items: center;
+    // position: relative;
+}
+.c-breadcrumb__list:not(:last-child)::after{
+    content: '>';
+    margin:0 .4em;
+    // display: inline-block;
+    // position: absolute;
+    // background-image: url(/images/common/breadcrumbs-angle.svg);
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // top: 45%;
+    // right: rem(-12);
+    // transform: translateY(-45%);
+    // width: rem(6);
+    // height: rem(12);
+}
+.c-breadcrumb__list-active{
+    /*homeだけ色が違うのでそのCSS*/
+    color:#391E88 ;
+}

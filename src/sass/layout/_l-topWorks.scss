@@ -1,5 +1,10 @@
 @use "global" as *;
 //とりあえずTOP WorksのCSSをここに全て記入
+.l-inner.l-topWorks__inner{
+    @include mq('md'){
+        max-width:rem(1260);
+    }
+}
 .l-topWorks{
     margin-top: rem(70);
 }
@@ -10,14 +15,18 @@
     margin-left: calc(50% - 50vw);
     padding-bottom: rem(60);
     padding-top: rem(157);
-
     @include mq('md'){
-        margin-top: 0;
-        }
+        margin-top: 0;          
+        margin-left:initial;/*初期化*/
+        padding-bottom: 0;/*初期化*/
+        padding-top:0; /*初期化*/
+        width: 48%; 
+    }
 }
 .p-topWorks__text-block{
     text-align: center;
     margin-top: rem(30);
+  
 }
 .p-topWorks__btn{
     margin-top: rem(30);
@@ -26,11 +35,24 @@
 .p-topWorks__image{
     //swiper－pagination位置変更のため
     position: relative;
+    @include mq('md'){
+        width: 52%;    
+    }
 }
 .topWorks-slide{
-    aspect-ratio:335/228 ;
+    aspect-ratio:335/228;
 }
 .topWorks-slide img{
     height: 100%;
     object-fit: cover;
 }
+.p-topWorks__content{
+    @include mq('md'){
+        display:flex;
+        align-items: center;
+        padding-top: rem(60);
+        padding-bottom:rem(60);
+        background:linear-gradient(90deg,transparent 0%,transparent 34%,#D9D9D9 34%,#D9D9D9 100%) ;
+    }
+}
+

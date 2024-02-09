@@ -22,4 +22,20 @@
     display: flex;
     align-items: center;
     transition: all 0.3s;
+    position:relative;
+}
+.p-pc-nav__item a::after{
+    position: absolute; /*親要素であるaタグを基準に位置を指定*/
+    left: 0;            /*アンダーラインを各メニュー（aタグ）の左端に指定*/
+    content: '';        /*本来は、擬似要素に入るテキストなどを’’内に指定。今回はアンダーラインなので何も記載しない*/
+    width: 100%;        /*アンダーラインを各aタグの幅に合わせる*/
+    height: 1px;        /*アンダーラインの高さ（太さ）*/
+    background:whitesmoke;/*アンダーラインの色*/
+    bottom:14px;
+    transform:scale(0,1);
+    transform-origin:left top;
+    transition:transform 0.3s;
+}
+.p-pc-nav__item a:hover::after{
+    transform:scale(1,1);
 }

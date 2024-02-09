@@ -1,0 +1,42 @@
+@use "global" as *;
+.c-page-link__flex{
+    margin-top: rem(40);
+    display: flex;
+    align-items:flex-start;
+    padding: rem(15) 0;
+    border-top:1px solid #B8AED5 ;
+    border-bottom:1px solid #B8AED5 ;
+}
+.c-page-link__prev,
+.c-page-link__next{
+    width: 50%;
+    font-size: rem(12);
+    line-height: calc(22/12);
+    letter-spacing:0.04em;
+    color:#391E88;
+    padding:rem(10) rem(20);
+    @include mq('md'){
+        font-size: rem(14);
+        line-height: calc(25/14);
+    }
+}
+.c-page-link__prev{
+    position:relative
+}
+.c-page-link__prev::after{
+    position:absolute;
+    content:"";
+    width: rem(1);
+    height: 100%;
+    top:0;
+    right:0;
+    background-color:#B8AED5;
+}
+.c-page-link__archive{
+    font-size: rem(15);
+    line-height: calc(27/15);
+    letter-spacing:0.05em;
+    color:#391E88;
+    margin-top: rem(20);
+    text-align:center;
+}

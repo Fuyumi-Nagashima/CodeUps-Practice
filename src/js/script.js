@@ -1,6 +1,15 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
     
+  $(function () {
+    $(window).on('scroll', function () {
+        if ($('.p-mv__inner,.p-sub-mv').height() < $(this).scrollTop()) {
+            $('.js-header').addClass('change-color');
+      } else {
+            $('.js-header').removeClass('change-color');
+      }
+    });
+  });
         //ハンバーガーメニュー
         $(".js-hamburger").on("click", function () {
             $(".js-hamburger").toggleClass("is-active");

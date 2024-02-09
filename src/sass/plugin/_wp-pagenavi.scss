@@ -1,0 +1,32 @@
+@use "global" as *;
+.wp-pagenavi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:rem(10);
+}       
+.wp-pagenavi a, .wp-pagenavi span{
+    display: inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:rem(45);
+    height:rem(45);
+    border-radius:50%;
+    background-color:pink;
+    font-size: rem(20);
+    line-height: 1;
+    font-weight:bold;
+    background-color:#7633A4;
+    color:#FFFFFF;
+    transition:all 0.3s ease ;
+}
+.wp-pagenavi a:hover{
+    background-color:#F1EBF8;
+    color:#4F31A5;
+    opacity:1;//デフォルト値をリセット
+
+}
+.wp-pagenavi span.current{
+    background-color:#F1EBF8;
+    color:#333333;
+}

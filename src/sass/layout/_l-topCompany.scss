@@ -1,13 +1,8 @@
 @use "global" as *;
 //PC verも作ったらscssファイルを分けること！！
 .l-topCompany{
-    margin-top: rem(60);
-    padding-top: rem(60);   
-    padding-bottom: rem(30);   
-    background-image: url(../images/common/company_bg.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
+    margin-top: rem(40);
+    
     @include mq('md'){
     margin-top: rem(140);
     }
@@ -16,7 +11,7 @@
     //左右のpaddingがimgと重なりあってしまっているのOKか確認(1440pxのときはカンプ通り)
     @include mq('md'){
         max-width: rem(1440);
-        background-image: url(../images/common/company-bg-face.png);
+        // background-image: url(../images/common/company-bg-face.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -61,6 +56,7 @@
     text-align: center;
     margin-top: rem(30); 
 }
+.p-company-wrap{}
 
 
 

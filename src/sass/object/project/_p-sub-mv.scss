@@ -1,0 +1,16 @@
+@use "global" as *;
+.p-sub-mv{
+    height:rem(180);
+    background-image: url(../images/common/sub-mv-sp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mq('md'){
+    height:rem(240);
+}
+}
+.c-sub-mv__section-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:rem(64);
+}

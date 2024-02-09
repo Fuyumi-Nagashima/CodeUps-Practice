@@ -5,15 +5,11 @@
         margin-top: rem(40);
     }
 }
-.p-recruit__container {
-
-
-}
-
 .recruit__image {
     aspect-ratio:345/200 ;
     @include mq('md'){
-        aspect-ratio:666/347 ;    
+        aspect-ratio:666/347 ;  
+        width:60%;  
     }
 }
 .p-recruit__image img{
@@ -24,6 +20,11 @@
 .p-recruit__body {
     margin-top: rem(70);
     text-align:center;
+    @include mq('md'){
+        padding:rem(70) rem(103);  
+        margin-top: 0;
+        width: 40%;
+    }
 }
 .p-recruit__text{
     margin-top:rem(30);
@@ -34,5 +35,14 @@
 .p-recruit__btn {
     margin-top:rem(30);
 }
+.p-recruit__container{
+    @include mq('md'){
+        display:flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        background: orange;
+}
+}
+
 
 

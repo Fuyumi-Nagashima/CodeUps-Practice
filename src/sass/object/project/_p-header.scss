@@ -1,12 +1,9 @@
 @use "global" as *;
 .p-header{
     position: fixed;
-    background-color: transparent;/*あとで消す*/
+    // background-color: transparent;/*あとで消す*/
     height:rem(64) ;
     width: 100%;
-    @include mq('md'){
-    height:rem(86) ;
-    }
 }
 /*scrollした時にheaderに遷移先が重なるのを避けるための指定*/
 /*.anker-link{
@@ -44,4 +41,8 @@
 }
 .p-header__pc-nav{
     height:inherit;
+}
+.p-header.change-color {
+    background-color: #00cc99; //スクロールしたあとのヘッダー背景色
+    transition: 0.3s;
 }

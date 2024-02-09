@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+    <!-- meta情報 -->
+    <title>CodeUpsライブコーディング第3章</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="”icon”" href="" />
+    <!-- Google フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"
+    />
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <!-- ここからheader -->
+    <header class="l-header p-header js-header">
+      <div class="p-header__inner">
+        <div class="p-header__logo">
+          <a class="p-header__logo-link" href="#">CODEUPS</a>
+        </div>
+        <nav class="p-header__pc-nav pc-nav u-desktop">
+          <ul class="p-pc-nav__items">
+            <li class="p-pc-nav__item">
+              <a class="" href="home.html">news</a>
+            </li>
+            <li class="p-pc-nav__item">
+              <a class="" href="">news</a>
+            </li>
+            <li class="p-pc-nav__item">
+              <a class="" href="">news</a>
+            </li>
+            <li class="p-pc-nav__item">
+              <a class="" href="">news</a>
+            </li>
+            <li class="p-pc-nav__item">
+              <a class="" href="">news</a>
+            </li>
+            <li class="p-pc-nav__item">
+              <a class="" href="">news</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="c-hamburger u-mobile js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="p-header__drawer-menu drawer-menu u-mobile js-drawer">
+          <div class="drawer-menu__inner">
+            <ul class="drawer-menu__items">
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">news</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">service</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">works</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">company</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">recruit</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 下層ページのmv -->
+    <section class="p-sub-mv l-sub-mv js-header">
+        <div class="c-sub-mv__section-header">
+            <div class="c-section-header  c-section-header--white">
+                <h1 class="c-section-header__title">news</h1>
+                <p class="c-section-title__subtitle">お知らせ</p>
+            </div>
+        </div>
+    </section>
+    <!-- パンくずリスト -->
+    <nav class="c-breadcrumb">
+        <ol
+        class="c-breadcrumb__lists l-inner"
+        itemscope
+        itemtype="https://schema.org/BreadcrumbList"
+    >
+        <li
+        class="c-breadcrumb__list "
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+        >
+        <a class="c-breadcrumb__list-link" itemprop="item" href="index.html">
+            <span itemprop="name" class="c-breadcrumb__list-active">home</span>
+        </a>
+        <meta itemprop="position" content="1" />
+        </li>
+
+        <li
+        class="c-breadcrumb__list"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+        >
+        <p class="c-breadcrumb__list-link" itemprop="item">
+            <span itemprop="name">news</span>
+        </p>
+        <meta itemprop="position" content="2" />
+        </li>
+    </ol>
+    </nav>
+    <!-- news(home)ページのnews-content -->
+    <div class="l-archive-home p-archive-home ">
+        <div class="l-inner p-archive-home__inner">
+            <div class="p-archive-home__items">
+                <div class="p-archive-home__item p-news-content">
+                    <div class="p-news-content__info">
+                      <time class="p-news-content__date" datetime="2024-01-21"
+                        >2024.01.21</time
+                      >
+                      <p class="p-news-content__category">お知らせ</p>
+                    </div>
+                    <div class="p-news-content__block">
+                      <a class="p-news-content__text"
+                        >Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a
+                      >
+                    </div>
+                  </div>
+                  <div class="p-archive-home__item p-news-content">
+                    <div class="p-news-content__info">
+                      <time class="p-news-content__date" datetime="2024-01-21"
+                        >2024.01.21</time
+                      >
+                      <p class="p-news-content__category">お知らせ</p>
+                    </div>
+                    <div class="p-news-content__block">
+                      <a class="p-news-content__text"
+                        >Smoothiesta様のWebサイトを制作いたしました</a
+                      >
+                    </div>
+                  </div>
+                  <div class="p-archive-home__item p-news-content">
+                    <div class="p-news-content__info">
+                      <time class="p-news-content__date" datetime="2024-01-21"
+                        >2024.01.21</time
+                      >
+                      <p class="p-news-content__category">お知らせ</p>
+                    </div>
+                    <div class="p-news-content__block">
+                      <a class="p-news-content__text"
+                        >Smoothiesta様のWebサイトを制作いたしました</a
+                      >
+                    </div>
+                  </div>
+                  <div class="p-archive-home__item p-news-content">
+                    <div class="p-news-content__info">
+                      <time class="p-news-content__date" datetime="2024-01-21"
+                        >2024.01.21</time
+                      >
+                      <p class="p-news-content__category">お知らせ</p>
+                    </div>
+                    <div class="p-news-content__block">
+                      <a class="p-news-content__text"
+                        >Webデザイナーを１名募集中です！</a
+                      >
+                    </div>
+                  </div>
+                  <div class="p-archive-home__item p-news-content">
+                    <div class="p-news-content__info">
+                      <time class="p-news-content__date" datetime="2024-01-21"
+                        >2024.01.21</time
+                      >
+                      <p class="p-news-content__category">お知らせ</p>
+                    </div>
+                    <div class="p-news-content__block">
+                      <a class="p-news-content__text"
+                        >Webデザイナーを１名募集中です！</a
+                      >
+                    </div>
+                  </div>
+                  <div class="p-archive-home__item p-news-content">
+                    <div class="p-news-content__info">
+                      <time class="p-news-content__date" datetime="2024-01-21"
+                        >2024.01.21</time
+                      >
+                      <p class="p-news-content__category">お知らせ</p>
+                    </div>
+                    <div class="p-news-content__block">
+                      <a class="p-news-content__text"
+                        >Webデザイナーを１名募集中です！</a
+                      >
+                    </div>
+                  </div>
+                  <div class="p-archive-home__item p-news-content">
+                    <div class="p-news-content__info">
+                      <time class="p-news-content__date" datetime="2024-01-21"
+                        >2024.01.21</time
+                      >
+                      <p class="p-news-content__category">お知らせ</p>
+                    </div>
+                    <div class="p-news-content__block">
+                      <a class="p-news-content__text"
+                        >Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a
+                      >
+                    </div>
+                  </div>
+                  <div class="p-archive-home__item p-news-content">
+                    <div class="p-news-content__info">
+                      <time class="p-news-content__date" datetime="2024-01-21"
+                        >2024.01.21</time
+                      >
+                      <p class="p-news-content__category">お知らせ</p>
+                    </div>
+                    <div class="p-news-content__block">
+                      <a class="p-news-content__text"
+                        >Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a
+                      >
+                    </div>
+                  </div>
+                  <div class="p-archive-home__item p-news-content">
+                    <div class="p-news-content__info">
+                      <time class="p-news-content__date" datetime="2024-01-21"
+                        >2024.01.21</time
+                      >
+                      <p class="p-news-content__category">お知らせ</p>
+                    </div>
+                    <div class="p-news-content__block">
+                      <a class="p-news-content__text"
+                        >Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a
+                      >
+                    </div>
+                  </div>
+            </div>
+            </div>
+      </div>
+    <!-- page-nav -->
+    <div class="l-pagenavi">
+        <div class="wp-pagenavi">
+            <span class="current">1</span>
+            <a class="page smaller" href="">2</a>
+            <a class="page smaller" href="">3</a>
+        </div>
+    </div>
+    <!-- お問い合わせ(Contact)セクション-->
+    <section class="p-contact l-sub-contact">
+      <div class="l-inner l-contact__inner">
+        <div class="c-section-header c-contact__section-header">
+          <h2 class="c-section-header__title">contact</h2>
+          <p class="c-section-title__subtitle">お問い合わせ</p>
+        </div>
+        <div class="p-contact__body">
+          <p class="p-contact__text">
+            Webサイトの制作のご依頼やお見積りなど、<br
+              class="u-mobile"
+            />お気軽にご相談ください。
+          </p>
+          <div class="p-recruit__btn">
+            <a href="#" class="c-btn c-btn-triangle">more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer-->
+    <footer class="l-footer p-footer">
+      <div class="p-footer__inner inner">
+        <div class="p-footer__nav p-footer-nav">
+          <!--p-footer-navというblockが入るのでp-footer__navも入れる！-->
+          <ul class="p-footer-nav__items">
+            <li class="p-footer-nav__item"><a href="" class="">home</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">news</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">service</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">works</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">company</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">recruit</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">contact</a></li>
+          </ul>
+        </div>
+        <div class="p-footer__copyright">
+          <small>&copy;pon design</small>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

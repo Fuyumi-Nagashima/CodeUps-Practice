@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+    <!-- meta情報 -->
+    <title>CodeUpsライブコーディング第3章</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="”icon”" href="" />
+    <!-- Google フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"
+    />
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <!-- ここからheader -->
+    <header class="l-header p-header js-header">
+      <div class="p-header__inner">
+        <div class="p-header__logo">
+          <a class="p-header__logo-link" href="#">CODEUPS</a>
+        </div>
+        <nav class="p-header__pc-nav pc-nav u-desktop">
+          <ul class="p-pc-nav__items">
+            <li class="p-pc-nav__item">
+              <a class="" href="home.html">news</a>
+            </li>
+            <li class="p-pc-nav__item">
+              <a class="" href="">news</a>
+            </li>
+            <li class="p-pc-nav__item">
+              <a class="" href="">news</a>
+            </li>
+            <li class="p-pc-nav__item">
+              <a class="" href="">news</a>
+            </li>
+            <li class="p-pc-nav__item">
+              <a class="" href="">news</a>
+            </li>
+            <li class="p-pc-nav__item">
+              <a class="" href="">news</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="c-hamburger u-mobile js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="p-header__drawer-menu drawer-menu u-mobile js-drawer">
+          <div class="drawer-menu__inner">
+            <ul class="drawer-menu__items">
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">news</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">service</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">works</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">company</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">recruit</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a class="drawer-menu__link" href="">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 下層ページのmv -->
+    <section class="p-sub-mv l-sub-mv js-header">
+        <div class="c-sub-mv__section-header">
+            <div class="c-section-header  c-section-header--white">
+                <h1 class="c-section-header__title">recruit</h1>
+                <p class="c-section-title__subtitle">採用情報</p>
+            </div>
+        </div>
+    </section>
+    <!-- パンくずリスト -->
+    <nav class="c-breadcrumb">
+        <ol
+        class="c-breadcrumb__lists l-inner"
+        itemscope
+        itemtype="https://schema.org/BreadcrumbList"
+    >
+        <li
+        class="c-breadcrumb__list "
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+        >
+        <a class="c-breadcrumb__list-link" itemprop="item" href="index.html">
+            <span itemprop="name" class="c-breadcrumb__list-active">home</span>
+        </a>
+        <meta itemprop="position" content="1" />
+        </li>
+
+        <li
+        class="c-breadcrumb__list"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+        >
+        <p class="c-breadcrumb__list-link" itemprop="item">
+            <span itemprop="name">recruit</span>
+        </p>
+        <meta itemprop="position" content="2" />
+        </li>
+    </ol>
+    </nav>
+    <!--recruit中身 -->
+    <section class="l-page-recruit p-page-recruit">
+        <div class="l-inner p-page-recruit__inner">
+            <div class="c-section-header c-page-recruit__section-header">
+                <h2 class="c-section-header__title c-page-recruit__title">enjoy&nbsp;<br class="u-mobile">creation&nbsp;for&nbsp;<br class="u-mobile">client</h2>
+                <p class="c-section-title__subtitle c-page-recruit__subtitle">楽しむ心が良いモノを生む</p>
+            </div>
+            <p class="p-page-recruit__text">心を弾ましながら<br>夢いっぱいのサイトを作ろう！<br>お客様も自分もみんなが幸せになれるように</p>
+            <div class="p-page-recruit__image">
+                <picture>
+                    <picture>
+                      <!-- ↓ ブラウザ幅が768px以下でwebp非対応ブラウザならば「fvSP.jpg」を表示する-->
+                      <source srcset="./assets/images/common/page-recruit_sp.png" media="(max-width:768px)">                    
+                      <!-- ↓ ブラウザ幅が768px以上でwebp非対応ブラウザならば「fv.jpg」を表示する-->
+                      <img src="./assets/images/common/page-recruit_pc.png" alt="女性たちの画像">
+                    </picture>          
+            </div>
+            <div class="p-page-recruit__recruitment">
+              <div class="c-section-header c-page-recruit__section-header">
+                <h2 class="c-section-header__title">募集中の職種</h2>
+              </div>
+                <div class="p-page-recruit__items">
+                  <div class="p-page-recruit__item">
+                    <h3 class="p-page-recruit__job-title">webデザイナー</h3>
+                  <dl class="p-page-recruit__lists p-common-lists">
+                      <!-- ループ -->
+                      <div class="p-common-lists__list">
+                          <dt>雇用形態</dt>
+                          <dd>正社員</dd>
+                      </div>
+                      <div class="p-common-lists__list">
+                          <dt>給与</dt>
+                          <dd>400万円〜600万円（経験・能力を考慮のうえ優遇）</dd>
+                      </div>
+                      <div class="p-common-lists__list">
+                          <dt>仕事内容</dt>
+                          <dd>Webサイトの制作。サイトのデザインとコーディングを担当していただきます。</dd>
+                      </div>
+                      <div class="p-common-lists__list">
+                          <dt>勤務時間</dt>
+                          <dd>10:00 〜 19:00（実働8時間、休憩1時間）</dd>
+                      </div>
+                      <div class="p-common-lists__list">
+                          <dt>応募資格</dt>
+                          <dd>PhotoshopやXDなどのデザインツールの使い方を理解し、コーディングの基礎スキルがある方。実務未経験でも学校や独学で学習した方を歓迎します。</dd>
+                          <dd>・デザインやコーディングを楽しめる方</dd>
+                          <dd>・デザインやコーディングを楽しめる方</dd>
+                          <dd>・デザインやコーディングを楽しめる方</dd>
+                      </div>
+                  </dl>
+                  <div class="p-recruit__btn">
+                    <a href="#" class="c-btn c-btn-triangle">more</a>
+                    <p class="p-recruit__note">求人サイトへ遷移します</p>
+                  </div>
+                  </div>
+                </div>
+            </div>
+            <div class="p-page-recruit__movies">
+              <div class="c-section-header c-page-recruit__section-header">
+                <h2 class="c-section-header__title">社内ムービー</h2>
+              </div>
+              <div class="p-page-recruit__movie">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aZDlaZCpKYw?si=tE8uxIBBkthHgJ3j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- お問い合わせ(Contact)セクション-->
+    <section class="p-contact  l-contact--mt0">
+      <div class="l-inner l-contact__inner">
+        <div class="c-section-header c-contact__section-header">
+          <h2 class="c-section-header__title">contact</h2>
+          <p class="c-section-title__subtitle">お問い合わせ</p>
+        </div>
+        <div class="p-contact__body">
+          <p class="p-contact__text">
+            Webサイトの制作のご依頼やお見積りなど、<br
+              class="u-mobile"
+            />お気軽にご相談ください。
+          </p>
+          <div class="p-contact__btn">
+            <a href="#" class="c-btn c-btn-triangle">more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer-->
+    <footer class="l-footer p-footer">
+      <div class="p-footer__inner inner">
+        <div class="p-footer__nav p-footer-nav">
+          <!--p-footer-navというblockが入るのでp-footer__navも入れる！-->
+          <ul class="p-footer-nav__items">
+            <li class="p-footer-nav__item"><a href="" class="">home</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">news</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">service</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">works</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">company</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">recruit</a></li>
+            <li class="p-footer-nav__item"><a href="" class="">contact</a></li>
+          </ul>
+        </div>
+        <div class="p-footer__copyright">
+          <small>&copy;pon design</small>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

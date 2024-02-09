@@ -1,0 +1,135 @@
+@use "global" as *;
+.p-page-contact__title{
+    text-align: center;
+    font-size: rem(14);
+    line-height: calc(25/14);
+    letter-spacing:0.05em;
+    margin-top:rem(40);
+    @include mq('md'){
+    margin-top:rem(70);
+    }
+}
+.p-form__label{
+    font-size:rem(15);
+    line-height:2;
+    letter-spacing:0.05em;
+    font-weight:600;
+}
+.p-form__label span{
+    color: purple;
+    font-size: rem(12);
+    padding-left:rem(10);
+}
+
+.p-form__item span{
+    font-size: rem(15);
+    line-height: calc(18/15);
+    letter-spacing:0.05em;
+    color:#333333;
+}
+.p-form__item{
+    display:flex;
+    flex-direction:column;
+    gap:rem(5);
+    @include mq('md'){
+        flex-wrap: wrap;    
+    }
+}
+/*form-input(名前・電話の記入欄CSS)*/
+.p-form-input input{
+    padding: rem(8) rem(15);
+	width: 100%;
+	font-size: rem(15);
+	line-height: 1;
+	border-radius: 5px;
+	border: 1px solid #AAAAAA;
+	appearance: none;
+	background-color: transparent;
+	background-image: none;
+    @include mq('md'){
+        max-width:rem(300);
+        width:100%;
+    }
+}
+.p-form-input input:focus {
+	border: 1px solid purple;
+	box-shadow: none;
+	outline: none;
+}
+
+/*form-textarea(テキストエリアの記入欄CSS)*/
+.p-form-textarea textarea {
+    padding: rem(8) rem(15);
+    width: 100%;
+    height: rem(200);
+    font-size: rem(15);
+    border-radius:5px;
+    border: 1px solid #ccc;
+    appearance: none;
+    background-color: transparent;
+    background-image: none;
+    resize:none;
+    @include mq('md'){
+        max-width:rem(600);
+        width: 100%;
+    }
+}
+.p-form-textarea textarea:focus {
+    border: 1px solid purple;
+    box-shadow: none;
+    outline: none;
+}
+/*placeholderのCSS*/
+.p-form-textarea textarea::placeholder,
+.p-form-input input::placeholder{
+    font-size:rem(12);
+    color:#757575;
+    font-weight: 600;
+}
+
+/*ラジオボタンのSCSS*/
+.p-form-radio span{
+    position:relative;
+    padding-left:rem(18);
+}
+.p-form-radio span::before,
+.p-form-radio span::after{
+    position:absolute;
+    content:"";
+    top:50%;
+    transform:translateY(-50%);
+    border-radius:50%;
+}
+.p-form-radio span::before{
+    width:13px;
+    height:13px;
+    border:1px solid #AAAAAA;
+    left:0;
+}
+.p-form-radio span::after{
+    width:9px;
+    height:9px;
+    background:orange;
+    left:2px;
+    opacity:0;
+}
+.p-form-radio input:checked + span::after{
+    opacity:1;
+}
+
+/*selectのCSS*/
+.p-form-select select{
+    padding: rem(8) rem(50) rem(8) rem(15);
+    text-transform:capitalize;
+    width: 100%;
+    font-size: rem(15);
+    line-height:calc(27/15);
+    border-radius: 0;
+    border: 1px solid #ccc;
+    // background-image: url(./../images/common/arrow.svg);
+    // background-repeat: no-repeat;
+    // background-size: rem(15);
+    // background-position: right rem(15) top rem(15);
+    appearance: none;
+    cursor: pointer;
+}

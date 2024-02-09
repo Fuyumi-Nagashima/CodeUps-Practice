@@ -9,6 +9,11 @@
     font-weight:$bold;
     line-height: calc(44/40);
     letter-spacing: 1.5px;
+    @include mq('md'){
+        font-size:rem(72);
+        line-height: 1;
+        letter-spacing:0.05em;
+    }
 }
 .mv__title-small{
     color: #FFF;
@@ -19,6 +24,12 @@
     line-height: calc(29/16);
     letter-spacing: 1.6px;
     margin-top:rem(20);
+    @include mq('md'){
+    font-size: rem(24);
+    line-height: calc(43/24);
+
+    
+    }
 }
 .p-mv__inner{
     // margin-top: rem(64);
@@ -45,9 +56,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    @include mq('md'){
+        text-align:center;
+    }
 }
 .p-mv__btn{
     margin-top: rem(30);
+    @include mq('md'){
+        margin-top: rem(50);
+    }
 }
 
 /* 線の描写 */

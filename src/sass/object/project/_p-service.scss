@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .p-service__items{
-    //下層ページでは違うかたちなのでp-service__itemにgridをあてる
+    //下層ページでは違うかたちなのでp-service__itemsにgridをあてる
     display:grid;
     row-gap: rem(40);
     @include mq('md'){
