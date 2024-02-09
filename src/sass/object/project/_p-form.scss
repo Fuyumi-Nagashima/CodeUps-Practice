@@ -9,11 +9,30 @@
     margin-top:rem(70);
     }
 }
+.p-page-contact__form{
+    margin-top:rem(40);
+    padding: rem(90) rem(60) rem(90) rem(90);
+    background-color:#F7F7F7;
+    @include mq('md'){
+        max-width: rem(750);
+        width: 100%;
+        margin-inline:auto;
+    }
+}
 .p-form__label{
     font-size:rem(15);
     line-height:2;
     letter-spacing:0.05em;
     font-weight:600;
+}
+.p-form__items:not(:first-child){
+    margin-top: rem(30);
+}
+.p-form__radio,
+.p-form__input input,
+.p-form__textarea textarea,
+.p-form__select select{
+    margin-top:rem(5);
 }
 .p-form__label span{
     color: purple;
@@ -32,8 +51,10 @@
     flex-direction:column;
     gap:rem(5);
     @include mq('md'){
-        flex-wrap: wrap;    
-    }
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: rem(35);
+}
 }
 /*form-input(名前・電話の記入欄CSS)*/
 .p-form-input input{
@@ -132,4 +153,46 @@
     // background-position: right rem(15) top rem(15);
     appearance: none;
     cursor: pointer;
+    @include mq('md'){
+        max-width: rem(300);
+        width: 100%;
+    }
+}
+
+/*送信ボタン*/
+.p-form__btn{
+    margin-top:rem(50);
+    text-align: center;
+}
+.p-form__btn input{
+    max-width: rem(200);
+    width: 100%;
+    padding: rem(18) ;
+    color: #fff;
+    display: inline-block;
+    font-size: rem(14);
+    line-height: 1;
+    background-color: #250D65;
+    background-image: none;
+    border: none;
+    border-radius:50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.p-form__btn input:hover,
+.p-form__btn input:focus {
+    outline: none;
+}
+
+.p-form__btn input:hover {
+    @include mq(md){
+        opacity: .8;
+    }
+}
+
+
+
+.p-page-contact--footer{
+    margin-top: rem(110);
 }

@@ -1,6 +1,6 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-    
+    //スクロールしたらヘッダーの色をつける
   $(function () {
     $(window).on('scroll', function () {
         if ($('.p-mv__inner,.p-sub-mv').height() < $(this).scrollTop()) {
